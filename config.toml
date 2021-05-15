@@ -56,7 +56,7 @@ author = "Themefisher"
 contact_form_action = "#"
 description = "This is meta description"
 google_analitycs_id = ""
-logo = "/images/taylor-olds-regular.jpeg"
+logo = "/images/taylor-olds-large.jpeg"
 sidebar = "left"
 [params.instafeed]
 access_token = "4044026246.1677ed0.8896752506ed4402a0519d23b8f50a17"
