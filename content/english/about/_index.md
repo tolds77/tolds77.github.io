@@ -11,4 +11,4 @@ team:
   name: Taylor Olds
 
 ---
-**A wise girls knows her limit to touch the sky.**
+**![](/images/51127412707_cb4d207120_c.jpeg)**
