@@ -6,7 +6,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ne  ullamc
   ornare at ipsum, viverra. Vitae magna faucibus eros, lectus rhoncus elementum vel.
   Quis nec viverra lectus augue praesent volutpat
 team:
-- image: "/images/51127427809_43435b8b94_o.jpeg"
+- image: "/images/51127427809_a0f6afa4b2_w.jpeg"
   designation: ''
   name: Taylor Olds
 
