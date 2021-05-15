@@ -5,7 +5,10 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ne  ullamc
   venenatis fringilla. Pretium, purus eu nec vulputate vel habitant egestas. Congue
   ornare at ipsum, viverra. Vitae magna faucibus eros, lectus rhoncus elementum vel.
   Quis nec viverra lectus augue praesent volutpat
-team: []
+team:
+- image: "/images/51127427809_43435b8b94_o.jpeg"
+  designation: ''
+  name: Taylor Olds
 
 ---
 **A wise girls knows her limit to touch the sky.Repellat sapiente neque praesentium adipisci.The question gave me an idea, so I answered quickly.**
