@@ -1,31 +1,13 @@
 ---
-title: "You’re here because your Wanna Hear Always Good News"
-image: "images/about.png"
-# description
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ne  ullamcorper venenatis fringilla. 
-Pretium, purus eu nec vulputate vel habitant egestas. Congue ornare at ipsum, viverra. Vitae magna faucibus eros, lectus rhoncus elementum vel. Quis nec viverra lectus augue praesent volutpat"
-draft: false
+title: You’re here because your Wanna Hear Always Good News
+image: "/images/51127427809_43435b8b94_o.jpeg"
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ne  ullamcorper
+  venenatis fringilla. Pretium, purus eu nec vulputate vel habitant egestas. Congue
+  ornare at ipsum, viverra. Vitae magna faucibus eros, lectus rhoncus elementum vel.
+  Quis nec viverra lectus augue praesent volutpat
+team: []
 
-# team
-team:
-  # team member
-  - name : "Bessie Mccoy"
-    image : "images/team/1.png"
-    designation : "Founder & CEO"
-  # team member
-  - name : "Juanita Hawkins"
-    image : "images/team/2.png"
-    designation : "Founder & CEO"
-  # team member
-  - name : "Arlene Bell"
-    image : "images/team/3.png"
-    designation : "Founder & CEO"
-  # team member
-  - name : "Jorge Russell"
-    image : "images/team/4.png"
-    designation : "Founder & CEO"
 ---
-
 **A wise girls knows her limit to touch the sky.Repellat sapiente neque praesentium adipisci.The question gave me an idea, so I answered quickly.**
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel pharetra fringilla nec facilisi. Pharetra id commodo, eget a varius a. Lacus eget proin nunc, arcu lacus scelerisque blandit. Tristique vivamus porta metus, congue viverra amet dignissim scelerisque. Accumsan ut suscipit vel nisl. Est velit vitae augue interdum. Amet amet ullamcorper aliquam sed elementum senectus. Augue convallis ipsum morbi ultricies luctus. Tempor id tellus dui faucibus nunc, turpis platea sit turpis.
