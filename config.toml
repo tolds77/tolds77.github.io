@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://examplesite.com"
+baseURL = "https://taylorolds.com"
 title = "GoJournal | Hugo Personal Blog Template"
 theme = "gojournal"
 # post pagination
