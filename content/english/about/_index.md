@@ -1,10 +1,10 @@
 ---
 title: About me
 image: "/images/51127427809_43435b8b94_o.jpeg"
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ne  ullamcorper
-  venenatis fringilla. Pretium, purus eu nec vulputate vel habitant egestas. Congue
-  ornare at ipsum, viverra. Vitae magna faucibus eros, lectus rhoncus elementum vel.
-  Quis nec viverra lectus augue praesent volutpat
+description: Hi! I am glad you're here! Welcome to my little part of the internet.
+  I wanted to have a place where I could share my thoughts and ideas with the rest
+  of the world. My content includes home interior design, daily life, and family.
+  Thanks for stopping by, I hope you will like what you see!
 team:
 - image: "/images/51127427809_a0f6afa4b2_w.jpeg"
   designation: ''
