@@ -1,5 +1,5 @@
 ---
-title: You’re here because your Wanna Hear Always Good News
+title: About me
 image: "/images/51127427809_43435b8b94_o.jpeg"
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ne  ullamcorper
   venenatis fringilla. Pretium, purus eu nec vulputate vel habitant egestas. Congue
