@@ -86,7 +86,7 @@ link = "#"
 title = "twitter"
 [[params.social]]
 icon = "ti-instagram"
-link = "#https://www.instagram.com/oldshome"
+link = "https://www.instagram.com/oldshome"
 title = "instagram"
 [[params.social]]
 icon = "ti-github"
