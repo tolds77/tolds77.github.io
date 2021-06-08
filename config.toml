@@ -4,7 +4,7 @@ disqusShortname = ""
 paginate = "3"
 summaryLength = "20"
 theme = "gojournal"
-title = "GoJournal | Hugo Personal Blog Template"
+title = "Taylor Olds"
 [Languages.en]
 contentDir = "content/english"
 copyright = "Copyright &copy; 2020 a hugo theme by [themefisher](https://themefisher.com)"
@@ -28,7 +28,6 @@ weight = 2
 URL = "about"
 name = "About"
 weight = 1
-
 [[menu.main]]
 URL = "contact"
 name = "Contact"
