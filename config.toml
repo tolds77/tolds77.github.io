@@ -14,15 +14,6 @@ languageName = "En"
 subscription_content = "Subscribe now to get notified about exclusive News And Views Issues every week!"
 subscription_title = "Join Newteller for the latest news"
 weight = 1
-[Languages.fr]
-contentDir = "content/french"
-copyright = "Copyright &copy; 2020 a hugo theme by [themefisher](https://themefisher.com)"
-home = "Accueil"
-languageCode = "fr-fr"
-languageName = "Fr"
-subscription_content = "Subscribe now to get notified about exclusive News And Views Issues every week!"
-subscription_title = "Rejoignez Newteller pour les dernières nouvelles"
-weight = 2
 [markup.goldmark.renderer]
 unsafe = true
 [[menu.footer]]
@@ -37,14 +28,7 @@ weight = 2
 URL = "about"
 name = "About"
 weight = 1
-[[menu.main]]
-URL = "privacy-policy"
-name = "Privacy Policy"
-weight = 2
-[[menu.main]]
-URL = "https://gethugothemes.com/shop/"
-name = "More Hugo Theme"
-weight = 2
+
 [[menu.main]]
 URL = "contact"
 name = "Contact"
