@@ -23,4 +23,6 @@ fields:
   description: regular/trending/featured
   default: regular
 pages:
+- content/english/post/hello-world.md
+- content/english/post/surf-lessons.md
 - content/english/post/surf-lessons.md
