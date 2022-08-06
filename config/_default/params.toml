@@ -224,9 +224,9 @@ plugins_js  = []
   commentable = {page = true, post = true, docs = true, project = true, publication = true, talk = true}
 
   # Configuration of Disqus.
-  [comments.disqus]
-    shortname = "jamesolds"  # Paste the shortname from your Disqus dashboard.
-    show_count = true  # Show comment count in page header? (true/false)
+  #[comments.disqus]
+  #  shortname = "taylorolds"  # Paste the shortname from your Disqus dashboard.
+  #  show_count = true  # Show comment count in page header? (true/false)
 
   # Configuration of Commento.
   [comments.commento]
