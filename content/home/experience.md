@@ -19,19 +19,18 @@ date_format = "January 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "Infrastructure Engineer"
-  company = "Oden Technologies"
-  company_url = "https://oden.io"
-  location = "Remote"
-  date_start = "2021-11-21"
-  date_end = "2022-08-01"
+  title = "Full time Student & Parent"
+  company = ""
+  company_url = ""
+  location = "Multiple locations"
+  date_start = "2018-05-18"
+  date_end = ""
   description = """
 
-- Evaluated multiple solutions and implemented Garden.io to streamline the Kubernetes development cycle, with a goal of reducing merge conflicts and mean time to merge.
-- Wrote terraform for and maintained a large scale data analytics deployment on Google Cloud (GCP).
-- Migrated Google Cloud Monitoring dashboards to Grafana with jsonnet and terraform, greatly improving the observability and monitoring UX.
-- Configured an initial implementation of the Bazel build system to improve the Golang monorepo build and deploy process.
-- Configured Statuspage.io to provide customers with up-to-date status of Oden’s major components.
+- Coordinated personal schedule with family and school while maintaining a 3.8 GPA in General Studies Associated Degree.
+- Organized and collaborated to maintain family members’ schedules , vacations , and a cross country move.
+- Social media networking to manage community gatherings and personal relationships.
+- Creating and balancing a family of four budget, paying bills, identifying cost saving opportunities, and eliminating extraneous spending.
   """
 
 [[experience]]
