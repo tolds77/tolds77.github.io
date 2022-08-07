@@ -14,8 +14,8 @@ role:
 
 # Organizations/Affiliations
 organizations:
-- name: Olds Technologies
-  url: "https://oldsmail.com"
+- name: 
+  url: 
 
 # Short bio (displayed in user profile at end of posts)
 bio: My Bio
