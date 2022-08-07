@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: up2u
+role: 
 
 # Organizations/Affiliations
 organizations:
@@ -21,9 +21,9 @@ organizations:
 bio: My Bio
 
 interests:
-- balloons 
+- design 
 - cameras
-- dunkin donuts
+- coffee
 
 education:
   courses:
