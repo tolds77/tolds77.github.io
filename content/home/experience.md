@@ -62,7 +62,7 @@ date_format = "January 2006"
   """
 
 [[experience]]
-  title = "LMedical Records Clerk"
+  title = "Medical Records Clerk"
   company = "IOD Incorporated"
   company_url = ""
   location = "Multiple locations, Florida"
