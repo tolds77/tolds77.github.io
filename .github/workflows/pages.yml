@@ -42,11 +42,6 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v1
-      - name: Build with Hugo
-        run: |
-          hugo \
-            --minify \
-            --baseURL ${{ steps.pages.outputs.base_url }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
