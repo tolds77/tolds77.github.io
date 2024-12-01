@@ -624,18 +624,18 @@ header h1 {
 }
 
 .portfolio-box img {
-    width: 100%; /* Make the image take up the full width of the box */
-    height: auto; /* Maintain the image's original aspect ratio */
-    object-fit: contain; /* Ensure the entire image is visible inside the box */
-    border-radius: 8px 8px 0 0; /* Rounded corners for the top of the box */
-    margin-bottom: 10px; /* Space below the image */
-    background-color: #f9f9f9; /* Optional background color to fill gaps if the image doesn’t cover the box */
+    width: 100%; 
+    height: auto; 
+    object-fit: contain;
+    border-radius: 8px 8px 0 0; 
+    margin-bottom: 10px; 
+    background-color: #f9f9f9; 
 }
 
 .portfolio-box h2 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #df9cac; /* Light pink for titles */
+    color: #df9cac; 
 }
 
 .portfolio-box p {
@@ -644,10 +644,9 @@ header h1 {
 }
 
 .portfolio-box:hover {
-    transform: translateY(-10px); /* Slight lift on hover */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-10px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
 }
-
 
 @media (max-width: 768px) {
     .portfolio-container {
