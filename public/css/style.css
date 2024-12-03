@@ -722,3 +722,44 @@ html {
     background: none;
     border: none;
 }
+/* Blog Content Section */
+.blog-content {
+    max-width: 800px; /* Limit content width */
+    margin: 40px auto; /* Center content */
+    padding: 20px;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.blog-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #df9cac; /* Light pink */
+}
+
+.blog-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.blog-content img {
+    width: 100%; /* Full-width images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px;
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.back-to-portfolio {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #df9cac;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-to-portfolio:hover {
+    text-decoration: underline;
+}
