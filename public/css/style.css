@@ -763,3 +763,12 @@ html {
 .back-to-portfolio:hover {
     text-decoration: underline;
 }
+.blog-content img {
+    width: 80%; /* Image takes 80% of the container's width */
+    max-width: 600px; /* Ensure the image doesn't exceed 600px width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Block layout to center the image */
+    margin: 20px auto; /* Center the image with space around */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
