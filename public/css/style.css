@@ -331,3 +331,130 @@ footer .social-icons img:hover {
         gap: 10px;
     }
 }
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    border-bottom: 2px solid #dfc8b6;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #8c7b6b;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #df9cac;
+}
+
+/* Blog Post Styles */
+.blog-post {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h1 {
+    font-family: 'Georgia', serif;
+    font-size: 28px;
+    color: #df9cac;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blog-post .intro {
+    font-size: 16px;
+    color: #8c7b6b;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blog-section {
+    margin-bottom: 30px;
+}
+
+.blog-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-section p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+.blog-post .conclusion {
+    font-size: 16px;
+    color: #8c7b6b;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back-to-portfolio {
+    display: inline-block;
+    margin-top: 20px;
+    color: #df9cac;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-to-portfolio:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-top: 2px solid #dfc8b6;
+    color: #8c7b6b;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social-icons img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.2);
+}
