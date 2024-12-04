@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,7 +12,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Header Styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -58,7 +57,6 @@ header nav ul li a:hover {
     }
 }
 
-/* Hero Section */
 .hero {
     width: 100%;
     height: auto;
@@ -82,7 +80,6 @@ header nav ul li a:hover {
     }
 }
 
-/* Portfolio Section */
 .portfolio {
     padding: 60px 30px;
     max-width: 1600px;
@@ -147,7 +144,6 @@ header nav ul li a:hover {
     }
 }
 
-/* Latest Work Section */
 .latest-work {
     background-color: #ffffff;
     padding: 90px 20px;
@@ -162,7 +158,7 @@ header nav ul li a:hover {
     max-width: 300px;
 }
 
-/* Work Grid Styling */
+
 .work-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -172,32 +168,32 @@ header nav ul li a:hover {
 .work-grid img {
     width: 100%;
     height: auto;
-    cursor: pointer; /* Make the images look clickable */
+    cursor: pointer; 
     border-radius: 8px;
     transition: transform 0.2s ease;
 }
 
 .work-grid img:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    transform: scale(1.05); 
 }
 
-/* Lightbox Overlay */
+
 .lightbox {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Dim background */
+    background: rgba(0, 0, 0, 0.8); 
     justify-content: center;
     align-items: center;
     z-index: 1000;
 }
 
 .lightbox-img {
-    max-width: 90%; /* Ensure image doesn't overflow */
-    max-height: 90%; /* Ensure image doesn't overflow */
+    max-width: 90%; 
+    max-height: 90%; 
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -213,8 +209,6 @@ header nav ul li a:hover {
     border: none;
 }
 
-
-/* Contact Section */
 .contact-me {
     background-color: #fff;
     text-align: center;
@@ -270,34 +264,7 @@ header nav ul li a:hover {
     background-color: #c08894;
 }
 
-/* Blog Content */
-.blog-content {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    line-height: 1.6;
-    font-size: 16px;
-    color: #333;
-    text-align: left;
-}
 
-.blog-content h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #df9cac;
-}
-
-.blog-content img {
-    width: 80%;
-    max-width: 600px;
-    height: auto;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
@@ -323,7 +290,7 @@ footer .social-icons img:hover {
     transform: scale(1.2);
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
     footer {
         flex-direction: column;
@@ -331,7 +298,7 @@ footer .social-icons img:hover {
         gap: 10px;
     }
 }
-/* General Styles */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -372,7 +339,7 @@ header nav ul li a:hover {
     color: #df9cac;
 }
 
-/* Blog Post Styles */
+
 .blog-post {
     max-width: 800px;
     margin: 40px auto;
@@ -434,27 +401,3 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #fff;
-    border-top: 2px solid #dfc8b6;
-    color: #8c7b6b;
-}
-
-footer .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-footer .social-icons img {
-    width: 20px;
-    height: 20px;
-    transition: transform 0.3s ease;
-}
-
-footer .social-icons img:hover {
-    transform: scale(1.2);
-}
