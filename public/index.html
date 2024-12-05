@@ -28,37 +28,38 @@
         <div class="hero-text">
         </div>
     </section>
-
     <section class="latest-work">
         <div class="latest-work-container">
             <img src="images/latestwork.png" alt="My Latest Work" class="latest-work-banner">
             <div class="work-grid">
-                <div class="work-box">
-                    <img src="images/hellobrevard.png" alt="Hello Brevard" data-fullsize="images/hellobrevard.png">
+                <div class="work-box" onclick="openLightbox('hellobrevard', 'Hello Brevard: A clean and fresh logo design for a Florida-based lifestyle blog inspired by coastal vibes.')">
+                    <img src="images/hellobrevard.png" alt="Hello Brevard">
                 </div>
-                <div class="work-box">
-                    <img src="images/logo.png" alt="YPB logo" data-fullsize="images/logo.png">
+                <div class="work-box" onclick="openLightbox('logo', 'YPB Logo: Branding for Your Party Besties, featuring a colorful and vibrant design for event planners.')">
+                    <img src="images/logo.png" alt="YPB logo">
                 </div>
-                <div class="work-box">
-                    <img src="images/terraandtonic.png" alt="Terra and tonic" data-fullsize="images/terraandtonic.png">
+                <div class="work-box" onclick="openLightbox('terraandtonic', 'Terra and Tonic: A sleek logo design inspired by earthy tones and natural beauty.')">
+                    <img src="images/terraandtonic.png" alt="Terra and tonic">
                 </div>
-                <div class="work-box">
-                    <img src="images/kaylalogo.png" alt="Project" data-fullsize="images/kaylalogo.png">
+                <div class="work-box" onclick="openLightbox('kaylalogo', 'Kayla Logo: A playful and artistic design for a photographer specializing in creative captures.')">
+                    <img src="images/kaylalogo.png" alt="Project">
                 </div>
-                <div class="work-box">
-                    <img src="images/1B9D5C10-4808-4DAB-A5F6-28CAE5DEC947.png" alt="Adas pencil shop" data-fullsize="images/1B9D5C10-4808-4DAB-A5F6-28CAE5DEC947.png">
+                <div class="work-box" onclick="openLightbox('adaspencilshop', 'Ada’s Pencil Shop: A colorful and inviting logo design for a children’s stationery shop.')">
+                    <img src="images/1B9D5C10-4808-4DAB-A5F6-28CAE5DEC947.png" alt="Adas pencil shop">
                 </div>
-                <div class="work-box">
-                    <img src="images/project4_taylorolds.jpg" alt="Football" data-fullsize="images/project4_taylorolds.jpg">
+                <div class="work-box" onclick="openLightbox('football', 'Football Project: A dynamic graphic capturing the energy of the game.')">
+                    <img src="images/project4_taylorolds.jpg" alt="Football">
                 </div>
             </div>
         </div>
-        <script src="/lightbox.js"></script>
-
+    
         <div id="lightbox" class="lightbox">
-            <span class="close">&times;</span>
+            <span class="close" onclick="closeLightbox()">&times;</span>
             <img class="lightbox-img" src="" alt="Full Size Work">
+            <p id="lightbox-desc"></p>
         </div>
+    </section>
+    
     
         
     </section>

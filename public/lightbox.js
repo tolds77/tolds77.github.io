@@ -4,24 +4,43 @@ document.addEventListener('DOMContentLoaded', () => {
     const lightboxImg = document.querySelector('.lightbox-img');
     const closeBtn = document.querySelector('.close');
 
-    // Open lightbox on image click
+  
     images.forEach(img => {
         img.addEventListener('click', () => {
             const fullsizeSrc = img.getAttribute('data-fullsize');
-            lightboxImg.src = fullsizeSrc; // Set the lightbox image source
-            lightbox.style.display = 'flex'; // Show the lightbox
+            lightboxImg.src = fullsizeSrc; 
+            lightbox.style.display = 'flex'; 
         });
     });
 
-    // Close lightbox on close button click
     closeBtn.addEventListener('click', () => {
-        lightbox.style.display = 'none'; // Hide the lightbox
+        lightbox.style.display = 'none'; 
     });
 
-    // Optional: Close lightbox when clicking outside the image
+ 
     lightbox.addEventListener('click', (e) => {
         if (e.target === lightbox) {
             lightbox.style.display = 'none';
         }
     });
 });
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.querySelector(".lightbox-img");
+const lightboxDesc = document.getElementById("lightbox-desc");
+
+function openLightbox(imgId, description) {
+   
+    const imgSrc = document.querySelector(`[onclick="openLightbox('${imgId}', '${description}')"] img`).src;
+    lightboxImg.src = imgSrc;
+    lightboxDesc.textContent = description;
+
+ 
+    lightbox.style.display = "flex";
+}
+
+function closeLightbox() {
+   
+    lightbox.style.display = "none";
+    lightboxImg.src = ""; 
+    lightboxDesc.textContent = ""; 
+}
