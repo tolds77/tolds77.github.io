@@ -28,19 +28,14 @@ const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.querySelector(".lightbox-img");
 const lightboxDesc = document.getElementById("lightbox-desc");
 
-function openLightbox(imgId, description) {
-   
-    const imgSrc = document.querySelector(`[onclick="openLightbox('${imgId}', '${description}')"] img`).src;
-    lightboxImg.src = imgSrc;
-    lightboxDesc.textContent = description;
-
- 
-    lightbox.style.display = "flex";
+function openLightbox(imgSrc, description) {
+    lightboxImg.src = imgSrc; 
+    lightboxDesc.textContent = description; 
+    lightbox.style.display = "flex"; 
 }
 
 function closeLightbox() {
-   
-    lightbox.style.display = "none";
+    lightbox.style.display = "none"; 
     lightboxImg.src = ""; 
     lightboxDesc.textContent = ""; 
 }
