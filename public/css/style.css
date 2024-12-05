@@ -102,7 +102,7 @@ header nav ul li a:hover {
     padding: 20px;
     width: 250px;
     text-decoration: none;
-    color: #333;
+    color: #df9cac;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
 }
