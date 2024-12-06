@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -180,65 +179,42 @@ header nav ul li a:hover {
 .lightbox {
     display: none;
     position: fixed;
-    top: 0;
+    z-index: 1000;
     left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
-    z-index: 1000;
-    overflow: auto; 
-    padding: 20px; 
+}
 
-    .lightbox img {
-        max-width: 80%; 
-        max-height: 60%; 
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        margin-bottom: 20px; 
-    }
-    #lightbox-desc {
-        color: white;
-        font-size: 16px; 
-        text-align: center;
-        margin: 0 auto;
-        max-width: 90%; 
-        line-height: 1.5; 
-    }
+.lightbox-img {
+    max-width: 90%;
+    max-height: 70%;
+    margin: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
 
-    .lightbox .close {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        font-size: 24px;
-        color: white;
-        cursor: pointer;
-        background: none;
-        border: none;
-        z-index: 1100;
-    }
-    @media (max-width: 768px) {
-        .lightbox img {
-            max-width: 90%; 
-            max-height: 50%; /
-        }
-    
-        #lightbox-desc {
-            font-size: 14px; 
-        }
-    }
-    @media (max-width: 480px) {
-        .lightbox img {
-            max-width: 100%; 
-            max-height: 50%; 
-        }
-    
-        #lightbox-desc {
-            font-size: 12px; 
-            text-align: justify;
-        }
-    }
+#lightbox-desc {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
 
 .lightbox .close:hover {
     color: red;
