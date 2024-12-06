@@ -530,11 +530,6 @@ body {
     max-width: 1200px;
 }
 
-.latest-work-banner {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
 
 .work-grid {
     display: grid;
