@@ -617,3 +617,76 @@ img {
         font-size: 1rem;
     }
 }
+/* 🎨 Art Gallery Section */
+.art-gallery {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.art-gallery h1 {
+    font-size: 2.5rem;
+    color: #4a5e3d;
+    margin-bottom: 30px;
+}
+
+/* 📦 Art Boxes Layout */
+.art-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.art-box {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.art-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.art-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.art-thumbnail:hover {
+    opacity: 0.8;
+}
+
+/* 🔍 Lightbox for Enlarged Images */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}

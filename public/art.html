@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Links to your main CSS -->
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/tayloroldslogo.png" alt="Home" class="logo">
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="about-me.html">about me</a>
+                <a href="blog.html">blog</a>
+                <a href="portfolio.html">portfolio</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="art-gallery">
+        <h1>Art Gallery</h1>
+        <div class="art-container">
+            <!-- Image 1 -->
+            <div class="art-box">
+                <img src="images/art1.jpg" alt="Artwork 1" class="art-thumbnail" onclick="openLightbox('images/art1.jpg')">
+            </div>
+            <!-- Image 2 -->
+            <div class="art-box">
+                <img src="images/art2.jpg" alt="Artwork 2" class="art-thumbnail" onclick="openLightbox('images/art2.jpg')">
+            </div>
+            <!-- Image 3 -->
+            <div class="art-box">
+                <img src="images/art3.jpg" alt="Artwork 3" class="art-thumbnail" onclick="openLightbox('images/art3.jpg')">
+            </div>
+            <!-- Image 4 -->
+            <div class="art-box">
+                <img src="images/art4.jpg" alt="Artwork 4" class="art-thumbnail" onclick="openLightbox('images/art4.jpg')">
+            </div>
+            <div class="art-box">
+                <img src="images/art5.jpg" alt="Artwork 4" class="art-thumbnail" onclick="openLightbox('images/art5.jpg')">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal for Enlarged Images -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" class="lightbox-img">
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-text">Taylor Olds 2024</div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/tayloroldsportfolio/" target="_blank">
+                    <svg width="36" height="36" viewBox="0 0 512 512" fill="white">
+                        <title>Instagram</title>
+                        <path d="M256 109.3c47.8 ..."></path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/taylorolds/" target="_blank">
+                    <svg width="36" height="36" viewBox="0 0 512 512" fill="white">
+                        <title>LinkedIn</title>
+                        <path d="M186.4 142.4c0 19 ..."></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openLightbox(imgSrc) {
+            document.getElementById('lightbox-img').src = imgSrc;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
