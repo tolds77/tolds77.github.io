@@ -431,3 +431,102 @@ img {
         font-size: 1rem;
     }
 }
+/* 🌟 Blog Landing Page */
+.blog-landing {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.blog-heading {
+    font-size: 2.5rem;
+    color: #4a5e3d;
+    margin-bottom: 30px;
+}
+
+/* 📦 Blog Grid */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+/* 🎨 Blog Boxes */
+.blog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    max-width: 300px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.blog-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.blog-box p {
+    font-size: 1.2rem;
+    color: #4a5e3d;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* 📱 Responsive Blog Grid */
+@media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-box img {
+        height: 150px;
+    }
+
+    .blog-box p {
+        font-size: 1rem;
+    }
+}
+/* 📄 Blog Post Page */
+.blog-content {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.blog-content h1 {
+    font-size: 2.5rem;
+    color: #4a5e3d;
+    margin-bottom: 20px;
+}
+
+.blog-content img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.blog-content p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
