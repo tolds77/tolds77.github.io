@@ -559,6 +559,29 @@ img {
     line-height: 1.6;
     margin-bottom: 20px;
 }
+/* 🔙 Back Button Styling */
+.back-button-container {
+    text-align: left;
+    padding: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4a5e3d;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #F6F1ED;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #7A7E33;
+    color: white;
+}
+
 
 /* 🖼️ Blog Images - Resize Without Cropping */
 .blog-content img {
