@@ -790,3 +790,47 @@ img {
     color: #4a5e3d;
     margin-top: 10px;
 }
+
+/* 🌟 Resume Page Styling */
+.resume-content {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+/* 📄 Resume Title */
+.resume-title {
+    font-size: 2.5rem;
+    color: #4a5e3d;
+    margin-bottom: 20px;
+}
+
+/* 📑 Resume Viewer */
+.resume-viewer {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 📥 Download Button */
+.download-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4a5e3d;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #7a7e33;
+}
