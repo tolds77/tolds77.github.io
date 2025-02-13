@@ -727,8 +727,8 @@ img {
 }
 
 /* 🌟 Checkered Background for Portfolio */
-.checkered-background {
-    background-image: url('images/9-little-valley-studio.jpg'); /* Make sure this file exists */
+.checkered-background1 {
+    background-image: url('/public/images/9-little-valley-studio.jpg'); /* Make sure this file exists */
     background-size: cover;
     background-position: center;
     display: flex;
