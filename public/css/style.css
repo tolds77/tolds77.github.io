@@ -560,14 +560,15 @@ img {
     margin-bottom: 20px;
 }
 
-/* 🖼️ Blog Images */
+/* 🖼️ Blog Images - Resize Without Cropping */
 .blog-content img {
     width: 100%;
-    max-width: 800px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    margin: 20px 0;
+    max-width: 600px; /* Adjust this value to make images smaller */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures the whole image is visible */
+    border-radius: 10px; /* Keeps rounded corners */
+    margin: 20px auto; /* Centers images */
+    display: block; /* Ensures proper alignment */
 }
 
 /* 📱 Responsive Blog Layout */
