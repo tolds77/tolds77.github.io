@@ -629,6 +629,18 @@ img {
     margin-bottom: 30px;
 }
 
+/* 🎨 Art Gallery Section */
+.art-gallery {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.art-gallery h1 {
+    font-size: 2.5rem;
+    color: #4a5e3d;
+    margin-bottom: 30px;
+}
+
 /* 📦 Art Boxes Layout */
 .art-container {
     display: flex;
