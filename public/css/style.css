@@ -725,3 +725,68 @@ img {
     color: white;
     cursor: pointer;
 }
+
+/* 🌟 Checkered Background for Portfolio */
+.checkered-background {
+    background-image: url('images/9-little-valley-studio.jpg'); /* Make sure this file exists */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+.portfolio-content {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 900px;
+}
+
+/* 🎨 Portfolio Styling */
+.portfolio-title {
+    font-size: 2.5rem;
+    color: #4a5e3d;
+    margin-bottom: 30px;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* 📦 Clickable Boxes */
+.portfolio-box {
+    text-decoration: none;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+}
+
+.portfolio-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.portfolio-box h2 {
+    font-size: 1.5rem;
+    color: #4a5e3d;
+    margin-top: 10px;
+}
