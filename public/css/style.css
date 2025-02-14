@@ -835,26 +835,33 @@ img {
     background-color: #7a7e33;
 }
 
-/* Branding Page Styles */
+/* Branding Page Styling */
 .branding-intro {
+    position: relative; /* Ensures content is above background */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    text-align: center;
-    padding: 50px 20px;
+    min-height: 100vh; /* Ensures it takes full height */
+    padding: 100px 20px; /* Adds spacing */
+    z-index: 2;
 }
 
 .branding-box {
     background-color: rgba(255, 255, 255, 0.95);
-    padding: 40px;
+    padding: 50px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    max-width: 800px;
+    max-width: 900px;
     width: 90%;
+    text-align: center;
+    position: relative;
+    z-index: 3; /* Ensures it is above background */
 }
 
+/* Brand Showcase Section */
 .branding-showcase {
+    position: relative;
+    z-index: 3;
     text-align: center;
     padding: 50px 20px;
 }
@@ -864,6 +871,7 @@ img {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    padding-bottom: 100px; /* Adds spacing before footer */
 }
 
 .brand-box {
@@ -884,7 +892,7 @@ img {
 
 /* Checkered Background */
 .checkered-background {
-    position: absolute;
+    position: fixed; /* Fixes background so content scrolls */
     top: 0;
     left: 0;
     height: 100%;
@@ -896,25 +904,11 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: absolute;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .branding-intro {
-        height: auto;
-        padding: 30px;
-    }
-
-    .branding-box {
-        width: 100%;
-    }
-
-    .brand-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .brand-box {
-        width: 90%;
-    }
+/* Ensure Footer Appears */
+.footer {
+    position: relative;
+    z-index: 4;
 }
