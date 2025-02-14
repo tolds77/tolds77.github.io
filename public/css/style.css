@@ -503,6 +503,26 @@ img {
         font-size: 1rem;
     }
 }
+
+/* Ensure blog content fills the page */
+.blog-container {
+    min-height: calc(100vh - 200px); /* Adjust height to push the footer down */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute content properly */
+    padding-bottom: 50px; /* Adds space before footer */
+}
+
+/* Ensure each blog card has spacing */
+.blog-card {
+    margin-bottom: 40px; /* Adds spacing between blog items */
+}
+
+/* Footer stays at the bottom */
+.footer {
+    margin-top: auto;
+}
+
 /* 📄 Blog Post Page */
 .blog-content {
     max-width: 800px;
