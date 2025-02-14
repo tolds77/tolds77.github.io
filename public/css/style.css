@@ -912,3 +912,27 @@ img {
     position: relative;
     z-index: 4;
 }
+.branding-box {
+    background-color: #fff; /* Fully opaque white */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    z-index: 3; /* Ensure it's on top */
+}
+
+/* Fix text color */
+.branding-box h1 {
+    font-size: 2rem;
+    color: #4a5e3d; /* Dark green */
+    font-weight: bold;
+}
+
+.branding-box p {
+    font-size: 1.2rem;
+    color: #333; /* Ensures readability */
+    line-height: 1.6;
+}
