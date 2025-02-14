@@ -743,6 +743,16 @@ img {
     justify-content: center;
     align-items: center;
 }
+/* Center the entire portfolio section */
+.portfolio-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 80vh; /* Ensures enough space */
+    padding: 50px 20px;
+}
 
 /* 🎨 Portfolio Styling */
 .portfolio-title {
@@ -762,16 +772,16 @@ img {
     text-align: center;
 }
 
-/* 📦 Clickable Boxes */
+/* Ensure boxes stay centered */
 .portfolio-box {
     text-decoration: none;
-    text-align: center;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 300px;
+    text-align: center;
 }
 
 .portfolio-box:hover {
