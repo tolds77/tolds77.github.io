@@ -1,469 +1,110 @@
-body, h1, p, ul, a {
+/* 🌟 General Reset */
+body, h1, h2, p, ul, a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  /* Base Styling */
-  body {
+}
+
+body {
     font-family: 'Georgia', serif;
     background-color: #eae3dc;
-  }
-  
-  .header {
+    overflow-x: hidden;
+}
+
+/* 🌟 Header Navigation */
+.header {
     background-color: #F6F1ED;
-    padding: 5px 10px;
-  }
-  
-  .header-container {
+    padding: 10px 20px;
+}
+
+.header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  
-  /* Left Logo */
-  .logo-container {
-    flex: 1;
-  }
-  
-  .logo {
+}
+
+.logo {
     width: 200px;
     height: auto;
-  }
-  
-  /* Center Navigation */
-  .nav-links {
-    flex: 1;
+}
+
+.nav-links {
     text-align: right;
-  }
-  
-  .nav-links a {
+}
+
+.nav-links a {
     text-decoration: none;
     margin: 0 20px;
     font-size: 1.2rem;
     color: #7A7E33;
     font-weight: bold;
-  }
-  
-  .nav-links a:hover {
+}
+
+.nav-links a:hover {
     color: #9fa445;
-  }
+}
 
-
- /* Reset Defaults */
-body, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Section Styling */
-  .portfolio-section {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  /* Checkered Background */
-  .checkered-background {
-    position: absolute;
+/* 🌟 Checkered Background */
+.checkered-background {
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 1;
-  }
-  
-  .background-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-.floating-content {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 100%; 
-    padding: 0 5%; 
-}
-
-.profile-pic {
-    width: 1000px; /* Slightly larger for balance */
-    border-radius: 10px;
-    position: relative;
-    z-index: 2;
-    margin-left: -140px; /* Moves the image more to the left */
-    opacity: 0; /* Start fully transparent */
-    animation: fadeIn 1s ease-in forwards 0.5s; /* Add a delay for staggered effect */
-}
-/* Right Welcome Logo */
-.welcome-logo {
-    width: 1090px; /* Adjust size for proportion */
-    position: relative;
-    z-index: 2;
-    margin-left: -390px; /* Pulls the logo closer to the profile picture */
-    margin-top: -190px; /* Moves the logo upwards */
-    opacity: 0; /* Start fully transparent */
-    animation: fadeIn 1s ease-in forwards 0.5s; /* Add a delay for staggered effect */
-}
-/* Define the fadeIn animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px); /* Slight upward motion */
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0); /* Ends at normal position */
-    }
-}
-  
-  
-  /* Boxes Section */
-  .boxes-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 50px 10px; /* Increased padding for top & bottom spacing */
-    min-height: 80vh; /* Ensures the section takes up vertical space */
-  }
-  
-  .boxes-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-  
-  .box-link {
-    display: inline-block;
-    text-decoration: none;
-  }
-  
-  .box {
-    width: 300px;
-    height: 250px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .flower-icon {
-    width: 200px;
-    height: 200px;
-    margin: 0 -10px;
-  }
-
-  .page-divider {
-    width: 100%;
-    background-color: #F6F1ED;
-    overflow: hidden;
-    position: relative;
-    height: 50px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: 2px solid #7a7e33;
-    border-bottom: 2px solid #7a7e33;
-}
-
-.scrolling-text {
-    white-space: nowrap;
-    overflow: hidden;
-    position: relative;
-    width: 100vw;
-}
-
-.scrolling-text span {
-    display: inline-block;
-    min-width: 200%; /* Ensures smooth looping */
-    font-size: 1.2rem;
-    font-family: 'Georgia', serif;
-    color: #4a5e3d;
-    animation: scrollText 200s linear infinite; /* Slow down scroll */
-}
-
-@keyframes scrollText {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-}
-
-.footer {
-    background-color: #F6F1ED;
-    padding: 5px 10px;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center; /* Centers container inside footer */
-    align-items: center;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.footer-text {
-    font-size: 1.2rem;
-    font-family: 'Georgia', serif;
-    color: #4a5e3d;
-    text-align: center;
-    margin-left: 0; /* Align text fully to the left */
-}
-
-.footer-social {
-    display: flex;
-    gap: 10px;
-}
-
-.footer-social a {
-    color: #ffffff !important; /* Ensures links do not override */
-    text-decoration: none;
-    background-color: #4a5e3d; /* Dark background to make white visible */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
-
-.footer-social a svg {
-    fill: #ffffff !important; /* Force white fill */
-    color: #ffffff !important; /* Ensure text color is white */
-    stroke: #ffffff !important; /* Force stroke color */
-    width: 24px;
-    height: 24px;
-}
-
-.footer-social a svg path {
-    fill: #ffffff !important; /* Ensure the actual icon paths are white */
-}
-html, body {
-    overflow-x: hidden;
-    width: 100%;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.section-class, .container-class {
-    max-width: 100%;
-    overflow: hidden;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Tablets (768px and below) */
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column; /* Stack header elements */
-        align-items: center;
-        text-align: center;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav-links a {
-        margin: 10px 0; /* Stack links vertically */
-    }
-
-    .boxes-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-social {
-        justify-content: center;
-    }
-}
-/* 🌐 Responsive Floating Images */
-@media (max-width: 1024px) {
-    .floating-content {
-        flex-direction: column; /* Stack images on smaller screens */
-        align-items: center;
-        text-align: center;
-    }
-
-    .profile-pic, .welcome-logo {
-        width: 60%; /* Adjust width for tablets */
-        margin: -115px 0;
-    }
-}
-
-@media (max-width: 768px) {
-    .floating-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .profile-pic, .welcome-logo {
-        width: 90%; /* Reduce size for mobile */
-        margin: -90px 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .profile-pic {
-        width: 90%; /* Make sure it's always visible */
-    }
-
-    .welcome-logo {
-        width: 100%; /* Ensure text remains readable */
-    }
-}
-
-/* 🌟 About Me Section */
-.about-me-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensure it takes full height of the viewport */
-    background-image: url('../images/9-little-valley-studio.jpg'); /* Ensure this file exists */
+    z-index: -1;
+    background-image: url('../images/9-little-valley-studio.jpg');
     background-size: cover;
     background-position: center;
-    padding: 100px 20px; /* Adds spacing for scrolling */
 }
 
-/* 📦 About Me Box - Now Wider */
-.about-me-box {
-    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white */
+/* 🌟 Sections Styling */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
     padding: 40px;
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column; /* Stack elements */
-    align-items: center;
-    max-width: 1050px; /* Increased width */
-    width: 90%; /* Takes more space on larger screens */
-    text-align: center;
-    position: relative;
-    margin-bottom: 100px; /* Ensures space before footer */
 }
 
-
-/* 🖼️ About Me Photo - Centered Above Box */
-.about-me-photo {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px; /* Spacing between photo and text box */
-    display: block;
-}
-
-/* 📝 About Me Text */
-.about-me-text {
-    max-width: 500px;
-    text-align: center;
-}
-
-.about-me-text h1 {
-    font-size: 2rem;
+/* 🌟 Main Titles */
+h1, h2 {
+    font-size: 2.2rem;
     color: #4a5e3d;
-    margin-bottom: 10px;
-}
-
-.about-me-text p {
-    font-size: 1.2rem;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* 🔄 Responsive Design */
-@media (max-width: 768px) {
-    .about-me-box {
-        padding: 20px;
-        width: 90%;
-    }
-
-    .about-me-text h1 {
-        font-size: 1.8rem;
-    }
-
-    .about-me-text p {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .about-me-photo {
-        width: 100%;
-    }
-
-    .about-me-text h1 {
-        font-size: 1.5rem;
-    }
-
-    .about-me-text p {
-        font-size: 1rem;
-    }
-}
-/* 🌟 Blog Landing Page */
-.blog-landing {
+    font-weight: bold;
     text-align: center;
-    padding: 50px 20px;
-}
-
-.blog-heading {
-    font-size: 2.5rem;
-    color: #4a5e3d;
     margin-bottom: 30px;
 }
 
-/* 📦 Blog Grid */
-.blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    justify-items: center;
-}
-
-/* 🎨 Blog Boxes */
-.blog-box {
+/* 📌 Blog Landing Page */
+.blog-container {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+    padding: 50px 20px;
+}
+
+/* 📦 Blog Grid Layout */
+.blog-grid {
+    width: 90%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    justify-content: center;
+}
+
+/* 🖼️ Blog Box */
+.blog-box {
     text-decoration: none;
     width: 100%;
-    max-width: 300px;
+    max-width: 320px;
     background: white;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -475,26 +116,49 @@ img {
 
 .blog-box img {
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
     border-radius: 10px;
 }
 
 .blog-box p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #4a5e3d;
-    margin-top: 10px;
     font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
 }
 
 /* 📱 Responsive Blog Grid */
 @media (max-width: 768px) {
     .blog-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .blog-box {
+        max-width: 280px;
+    }
+
+    .blog-box img {
+        height: 180px;
+    }
+
+    .blog-box p {
+        font-size: 1.1rem;
     }
 }
 
 @media (max-width: 480px) {
+    .blog-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 10px;
+    }
+
+    .blog-box {
+        max-width: 250px;
+    }
+
     .blog-box img {
         height: 150px;
     }
@@ -504,52 +168,6 @@ img {
     }
 }
 
-/* Ensure blog content fills the page */
-.blog-container {
-    min-height: calc(100vh - 200px); /* Adjust height to push the footer down */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Distribute content properly */
-    padding-bottom: 50px; /* Adds space before footer */
-}
-
-/* Ensure each blog card has spacing */
-.blog-card {
-    margin-bottom: 40px; /* Adds spacing between blog items */
-}
-
-/* Footer stays at the bottom */
-.footer {
-    margin-top: auto;
-}
-
-/* 📄 Blog Post Page */
-.blog-content {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    text-align: left;
-}
-
-.blog-content h1 {
-    font-size: 2.5rem;
-    color: #4a5e3d;
-    margin-bottom: 20px;
-}
-
-.blog-content img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.blog-content p {
-    font-size: 1.2rem;
-    color: #333;
-    line-height: 1.6;
-}
 /* 📄 Blog Post Page */
 .blog-content {
     max-width: 900px;
@@ -561,25 +179,17 @@ img {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.blog-content h1 {
-    font-size: 2.5rem;
-    color: #4a5e3d;
-    margin-bottom: 20px;
+.blog-content img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
 }
 
-.blog-content h2 {
-    font-size: 2rem;
-    color: #4a5e3d;
-    margin-top: 30px;
-}
-
-.blog-content p {
-    font-size: 1.2rem;
-    color: #333;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-/* 🔙 Back Button Styling */
+/* 🔙 Back Button */
 .back-button-container {
     text-align: left;
     padding: 20px;
@@ -602,179 +212,7 @@ img {
     color: white;
 }
 
-
-/* 🖼️ Blog Images - Resize Without Cropping */
-.blog-content img {
-    width: 100%;
-    max-width: 600px; /* Adjust this value to make images smaller */
-    height: auto; /* Maintains aspect ratio */
-    object-fit: contain; /* Ensures the whole image is visible */
-    border-radius: 10px; /* Keeps rounded corners */
-    margin: 20px auto; /* Centers images */
-    display: block; /* Ensures proper alignment */
-}
-
-/* 📱 Responsive Blog Layout */
-@media (max-width: 1024px) {
-    .blog-content {
-        max-width: 80%;
-    }
-}
-
-@media (max-width: 768px) {
-    .blog-content {
-        max-width: 90%;
-    }
-
-    .blog-content h1 {
-        font-size: 2rem;
-    }
-
-    .blog-content h2 {
-        font-size: 1.8rem;
-    }
-
-    .blog-content p {
-        font-size: 1.1rem;
-    }
-
-    .blog-content img {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .blog-content {
-        padding: 15px;
-    }
-
-    .blog-content h1 {
-        font-size: 1.8rem;
-    }
-
-    .blog-content h2 {
-        font-size: 1.6rem;
-    }
-
-    .blog-content p {
-        font-size: 1rem;
-    }
-}
-/* 🎨 Art Gallery Section */
-.art-gallery {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.art-gallery h1 {
-    font-size: 2.5rem;
-    color: #4a5e3d;
-    margin-bottom: 30px;
-}
-
-/* 🎨 Art Gallery Section */
-.art-gallery {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.art-gallery h1 {
-    font-size: 2.5rem;
-    color: #4a5e3d;
-    margin-bottom: 30px;
-}
-
-/* 📦 Art Boxes Layout */
-.art-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.art-box {
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.art-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.art-thumbnail {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-}
-
-.art-thumbnail:hover {
-    opacity: 0.8;
-}
-
-/* 🔍 Lightbox for Enlarged Images */
-.lightbox {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.lightbox-img {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 10px;
-}
-
-.close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-}
-
-/* 🌟 Checkered Background for Portfolio */
-.checkered-background1 {
-    background-image: url('/public/images/9-little-valley-studio.jpg'); /* Make sure this file exists */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 50px 20px;
-}
-
-.portfolio-content {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    width: 80%;
-    max-width: 900px;
-}
-
 /* 🎨 Portfolio Styling */
-.portfolio-title {
-    font-size: 2.5rem;
-    color: #4a5e3d;
-    margin-bottom: 30px;
-}
-
 .portfolio-container {
     display: flex;
     justify-content: center;
@@ -782,7 +220,6 @@ img {
     flex-wrap: wrap;
 }
 
-/* 📦 Clickable Boxes */
 .portfolio-box {
     text-decoration: none;
     text-align: center;
@@ -811,212 +248,46 @@ img {
     margin-top: 10px;
 }
 
-/* 🌟 Resume Page Styling */
-.resume-content {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    width: 80%;
-    max-width: 900px;
-    margin: 50px auto;
-}
-
-/* 📄 Resume Title */
-.resume-title {
-    font-size: 2.5rem;
-    color: #4a5e3d;
-    margin-bottom: 20px;
-}
-
-/* 📑 Resume Viewer */
-.resume-viewer {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* 📥 Download Button */
-.download-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #4a5e3d;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.download-button:hover {
-    background-color: #7a7e33;
-}
-
-/* Branding Page Styling */
-.branding-intro {
-    position: relative; /* Ensures content is above background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensures it takes full height */
-    padding: 100px 20px; /* Adds spacing */
-    z-index: 2;
-}
-
-.branding-box {
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    max-width: 900px;
-    width: 90%;
-    text-align: center;
-    position: relative;
-    z-index: 3; /* Ensures it is above background */
-}
-
-/* Brand Showcase Section */
-.branding-showcase {
-    position: relative;
-    z-index: 3;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.brand-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding-bottom: 100px; /* Adds spacing before footer */
-}
-
-.brand-box {
-    width: 300px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.brand-box img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.brand-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Checkered Background */
-.checkered-background {
-    position: fixed; /* Fixes background so content scrolls */
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-}
-
-.background-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-}
-
-/* Ensure Footer Appears */
+/* 🌟 Footer */
 .footer {
-    position: relative;
-    z-index: 4;
-}
-.branding-box {
-    background-color: #fff; /* Fully opaque white */
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    max-width: 900px;
-    width: 90%;
+    margin-top: auto;
+    background-color: #F6F1ED;
     text-align: center;
-    position: relative;
-    z-index: 3; /* Ensure it's on top */
-}
-
-/* Fix text color */
-.branding-box h1 {
-    font-size: 2rem;
-    color: #4a5e3d; /* Dark green */
-    font-weight: bold;
-}
-
-.branding-box p {
-    font-size: 1.2rem;
-    color: #333; /* Ensures readability */
-    line-height: 1.6;
-}
-.brand-revamps {
-    text-align: center;
-    margin: 50px auto;
-}
-
-.brand-revamps h2 {
-    font-size: 2rem;
-    font-family: 'Georgia', serif;
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-.brand-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    flex-wrap: wrap; /* Ensures responsiveness */
-}
-
-.brand-box {
-    background-color: #fff; /* White background */
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    text-align: center;
-    max-width: 300px;
-    width: 100%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.brand-box img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.brand-box a {
-    display: block;
-    font-size: 1.1rem;
-    font-family: 'Georgia', serif;
-    font-weight: bold;
-    color: #4a5e3d; /* Dark green */
+.footer-text {
+    font-size: 1.2rem;
+    color: #4a5e3d;
+}
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social a {
+    color: #4a5e3d;
     text-decoration: none;
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    transition: transform 0.2s ease-in-out;
 }
 
-.brand-box a:hover {
-    color: #9fa445; /* Lighter green on hover */
-    text-decoration: underline;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .brand-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .brand-box {
-        max-width: 80%;
-    }
+.footer-social a:hover {
+    transform: scale(1.1);
 }
