@@ -834,3 +834,87 @@ img {
 .download-button:hover {
     background-color: #7a7e33;
 }
+
+/* Branding Page Styles */
+.branding-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.branding-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 90%;
+}
+
+.branding-showcase {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.brand-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.brand-box {
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.brand-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Checkered Background */
+.checkered-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .branding-intro {
+        height: auto;
+        padding: 30px;
+    }
+
+    .branding-box {
+        width: 100%;
+    }
+
+    .brand-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brand-box {
+        width: 90%;
+    }
+}
