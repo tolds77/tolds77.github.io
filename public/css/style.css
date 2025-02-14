@@ -731,17 +731,6 @@ img {
     cursor: pointer;
 }
 
-/* 🌟 Checkered Background for Portfolio */
-.checkered-background1 {
-    background-image: url('/public/images/9-little-valley-studio.jpg'); /* Make sure this file exists */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 50px 20px;
-}
 
 .portfolio-content {
     text-align: center;
@@ -751,6 +740,8 @@ img {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     width: 80%;
     max-width: 900px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* 🎨 Portfolio Styling */
