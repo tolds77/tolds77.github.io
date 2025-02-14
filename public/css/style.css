@@ -936,3 +936,67 @@ img {
     color: #333; /* Ensures readability */
     line-height: 1.6;
 }
+.brand-revamps {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.brand-revamps h2 {
+    font-size: 2rem;
+    font-family: 'Georgia', serif;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.brand-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.brand-box {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.brand-box a {
+    display: block;
+    font-size: 1.1rem;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #4a5e3d; /* Dark green */
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.brand-box a:hover {
+    color: #9fa445; /* Lighter green on hover */
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .brand-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .brand-box {
+        max-width: 80%;
+    }
+}
