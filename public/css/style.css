@@ -754,8 +754,12 @@ img {
 .portfolio-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    align-items: center;
     flex-wrap: wrap;
+    gap: 30px;
+    max-width: 900px; /* Limits the width so content doesn't stretch */
+    margin: 0 auto; /* Centers horizontally */
+    text-align: center;
 }
 
 /* 📦 Clickable Boxes */
